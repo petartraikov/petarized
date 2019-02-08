@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+@font-face{
+    font-family: myfont1;
+    src:url(../fonts/SofiaProRegular.ttf);
+}
+
+/* * {
+    border: 1px solid red;
+} */
+
+/* UNIVERZALNI CSS PRAVILA */
+
+.container {
+    max-width: 1440px;
+}
+
+.pomestilevo {
+    padding-left: 180px;
+}
+
+.pomestidole {
+    padding-top: 10%;
+}
+
+.pomestidole1 {
+    padding-top: 13%;
+}
+
+.pomestidole2 {
+    padding-top: 8%;
+}
+
+.pomestidole3 {
+    padding-top: 30%;
+}
+
+.pomestidole4 {
+    padding-top: 17%;
+}
+
+.vovlechi {
+    margin-left: -7%;
+}
+
+/*  PRV CONTAINER */
+
+.prvcont {
+    height: 650px;
+    background-image: url("../media/PochetnaPrvaSlika.jpg");
+    background-size: 2000px;
+    background-position: center;
+}
+
+.tritehorizon {
+    list-style-type: none;
+    overflow: hidden;
+    color: rgb(247, 233, 233);
+    font-weight: bold;
+}
+
+.kacigore {
+    margin-top: -30%;
+}
+
+.triteli {
+    float: left;
+    word-spacing: 30px;
+    padding: 15px;
+}
+
+ul.tritehorizon {
+    padding-inline-start: 0px;
+}
+
+ul.tritehorizon>li:first-child {
+    padding-left: 0px;
+}
+
+
+
+.btnteam {
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 3% 4%;
+}
+
+.btnteam:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    text-decoration: none;
+
+}
+
+.btnteam:hover #teamlink {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+.btnlearn {
+    border: none;
+    border-radius: 0;
+    padding: 3% 4%;
+}
+
+#teamlink {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* VTOR CONTAINER */
+
+.vtorcont { 
+    background-color: rgb(255, 255, 255);
+}
+
+.homeboringtext {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+
+@keyframes v {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hoverdivs {
+    height: 400px;
+    border-top: 1px solid rgb(189, 184, 184);
+    cursor: pointer;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.hoverdivs:nth-child(2) {
+    border-left: 1px solid rgb(189, 184, 184);
+    border-right: 1px solid rgb(189, 184, 184);
+}
+
+.hoverdivs:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s linear;
+    display:block;
+    visibility:visible;
+    opacity:1;
+    /* animation-name: text;
+    animation-duration: 1s; */
+}
+
+.hoverdivs:hover p { 
+    /* opacity:0;  */
+    transition: 0.3s linear;
+    animation-name: p-animate;
+    animation-duration: 0.3s;
+}
+
+.hideshowHover {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    color: white;
+}
+
+
+@keyframes p-animate {
+    from {margin-top: 20px;}
+    to {margin-top: 0;}
+}
+
+.pin {
+    opacity: 0;
+}
+
+.hoverdivs:hover .pin {
+    opacity: 1;
+}
+
+.underhoverimg {
+    background-image: url(../media/officemac.jpg);
+    height: 600px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* THIRD SECTION / TABLET */ 
+
+.ipadpanel {
+    height: 500px;
+}
+
+.ipadbody {
+    height: 500px;
+    width: 700px;
+    border-radius: 20px;
+    overflow: hidden;
+    top: 0;
+    box-shadow: 3px 10px 10px #d2d2d2;
+    border-radius: 20px;
+    border: 2px solid #d2d2d2;
+}
+
+.ipad-camera {
+    top: 254px;
+    left: 14px;
+    z-index: 22;
+    position: absolute;
+}
+
+.ipad-button {
+    top: 254px;
+    right: 15px;
+    z-index: 21;
+    position: absolute;
+}
+
+.grayLine {
+    margin-top: 220px;
+    margin-left: -15%;
+    width: 70px;
+    height: 1px;
+    background-color: #d2d2d2;
+    z-index: 7;
+}
+
+.arrow {
+    position: relative;
+    width: 52px;
+    height: 52px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.arrow-up {
+    bottom: -200px;
+}
+
+.arrow-down {
+    top: 20px;
+}
+
+.strelka {
+    margin: 0 30%;
+}
+
+.strelka:hover{
+    color: red;
+    transition: 0.2s;
+}
+
+#mover {
+    top: 3%;
+    left: 0%;
+    position: absolute;
+    height: 1361px;
+    width: 703px;
+    overflow: hidden;
+    z-index: -99999;
+}
+
+
+.experimental {
+    box-shadow:inset 0px 0px 0px 1px #3a3a3a;
+    height: 500px;
+    border-left:30px solid white;
+    border-right:40px solid white;
+    border-top: 30px solid white;
+    border-bottom: 30px solid white;
+    overflow: visible;
+    z-index: 99999;
+}
+
+/* FOURTH SECTION */
+
+.section4left, .section4right {
+    height: 720px;
+}
+
+.section4left {
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid white;
+    margin: 0;
+    padding: 200px 85px;
+    transform-style: preserve-3d;
+    transform: perspective(800px);
+}
+
+.section4right {
+    margin: 0;
+    padding: 200px 85px;
+    background-color: rgb(248, 244, 212);
+}
+
+
+#bullline {
+    margin-bottom: 20px;
+}
+
+.bullet {
+    color:red;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* FIFTH SECTION */
+
+.blackcity {
+    background-image: url(../media/blackcity.jpg);
+    height: 600px;
+}
+
+.fifthsecbtn {
+    font-size: 15px;
+    border-radius: 0;
+    padding: 20px 60px;
+    margin: 10px;
+}
+
+/* MEDIA QUERIES / РЕСПОНЗИВНОСТ */
+
+
+@media only screen and (max-width: 1440px)
+/* and (max-width: 1680px)*/{ 
+  
+.ipanel {
+    margin-left: 4%;
+}
+
+#laptopimg2 {
+    width: 90vh;
+    margin-top: 39%;
+    margin-left: 35%;
+}
+
+.firsth3 {
+    margin-top: 10%;
+}
+
+}
+
+@media only screen and (max-width: 1024px)
+/* and (max-width: 1440px)*/ {
+   
+#laptopimg2 {
+    width: 70vh;
+    margin-top: 37px;
+    margin-left: 120%;
+}
+
+.firsth3 {
+    margin-left: -15%;
+    margin-top: 20%;
+}
+
+.tritehorizon {
+    margin-top: -10%;
+    margin-left: -18%;
+}
+
+.kopchence {
+    margin-top: 0%;
+    margin-left: -14%;
+}
+
+.ipanel {
+    margin-left: 14%;
+}
+
+.ipadtext {
+    padding-top: 10%;
+}
+}
+
+@media only screen and (max-width: 768px)
+/* and (max-width: 1024px)*/{ 
+    
+/* FIRST SEC*/
+
+.tritehorizon {
+    margin-top: -5%;
+    margin-left: 2px;
+}
+
+.firsth3 {
+    margin-left: -5%;
+    margin-top: -5%;
+}
+
+.stesniutablet {
+    width: 80%;
+}
+
+.needsname {
+    margin-left: -114px;
+}
+
+
+.section4left {
+    padding: 0;
+}
+
+#laptopimg {
+    width: 70%;
+    margin-top: 14%;
+    margin-left: 14%;
+}
+
+.homeleft1 {
+    margin-top: 30%;
+    margin-left: -15%;
+}
+
+.kacigore {
+    margin-top: -52%;
+}
+
+.rightbullet {
+    text-align: left;
+}
+
+/*FIRST SECTION*/
+
+.firstsection {
+    text-align: center;
+}
+
+.stesninatablet {
+    padding-left: 5%;
+    font-size: 28px;
+    line-height: 50px;
+}
+
+.experimental {
+    width: 103%;
+    border-right: 54px solid white;
+}
+
+.globalexpansion {
+    padding-top: 30%;
+}
+
+.ipanel {
+    margin-left: 0;
+}
+}
+
+@media only screen and (max-width: 425px)
+{ 
+
+    /*FIRST SEC*/
+
+    .prvcont {
+    height: 70vh;
+    }
+
+    .kacigore {
+        margin-top: 0;
+    }
+
+    .firsth3 {
+        text-align: center;
+        width: 162%;
+        font-size: 20px;
+        margin-left: -110px;
+        padding-top: 80%;
+    }
+
+    #laptopimg {
+    margin-top: 106px;
+    width: 410px;
+    margin-left: -3px;
+    }
+
+    .needsname {
+        margin-left: -10px;
+        text-align: center;
+    }
+
+    .triteli {
+        font-size: 14px;
+        padding: 1px;
+    }
+
+    .tritehorizon {
+        /* margin-left: -65%; */
+        margin-top: -160%;
+    }
+
+    .homeleft1{
+        margin-top: 0px;
+    }
+
+
+    /* I PAD */
+
+  .experimental {
+    width: 110%;
+    height: 100%;
+    margin-left: -5%;
+    border-right: 30px solid white;
+    border-left: 30px solid white;
+  }
+
+  .ipadbody {
+    height: 300px;
+  }
+
+  .ipanel {
+      margin-right: 10px;
+    margin-left: 5px;
+  }
+
+  .ipad-button {
+    top: 142px;
+    right: 2px;
+    width: 6%;
+    }
+
+    .ipad-camera {
+        top: 142px;
+    left: 0px;
+}
+
+    .ipadpanel {
+        height: 285px;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+    #laptopimg {
+        width: 270px;
+    margin-top: 187px;
+    margin-left: 37px;
+    }
+
+    .tritehorizon {
+        margin-left: -115px;
+    margin-top: -246px;
+    }
+
+    .hoverdivs:hover{
+        height: 53vh;
+    }
+    .hoverdivs {
+        height: 53vh;
+    }
+
+    .section4right {
+    margin: 0;
+    padding: 61px 85px;
+    background-color: rgb(248, 244, 212);
+}
+
+.fifthsection {
+    padding-top: 0;
+}
+}
+
+
+
+
+
+
+

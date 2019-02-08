@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+@font-face{
+    font-family: myfont1;
+    src:url(../fonts/SofiaProRegular.ttf);
+}
+
+/* * {
+    border: 1px solid red;
+} */
+
+/* UNIVERZALNI CSS PRAVILA */
+
+.container {
+    max-width: 1440px;
+}
+
+.pomestilevo {
+    padding-left: 180px;
+}
+
+.pomestidole {
+    padding-top: 10%;
+}
+
+.pomestidole1 {
+    padding-top: 13%;
+}
+
+.pomestidole2 {
+    padding-top: 8%;
+}
+
+.pomestidole3 {
+    padding-top: 30%;
+}
+
+.pomestidole4 {
+    padding-top: 17%;
+}
+
+.vovlechi {
+    margin-left: -7%;
+}
+
+
+/* NAVBAR */
+navbar {
+    color: white;
+    background-color: transparent;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+
+navbar.scrolled {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    box-shadow:0 2px 7px 0 hsla(0,0%,56%,.15)
+}
+
+.bg-dark {
+    background-color: black!important;
+}
+
+.bg-dark .logotext {
+    color: white;
+}
+
+nav-link a.scrolled {
+    color: black;
+    text-decoration: none;
+}
+
+.logolink {
+    text-decoration: none;
+    color: white;
+}
+
+.logolink.scrolled {
+    color: black;
+    text-decoration: none;
+}
+
+.logotitle {
+    font-family: myfont1;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.logotext {
+    margin-top: -40%;
+    margin-left: 40%;
+}
+
+.logolink:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.border-bottom {
+    border-bottom: none !important;
+}
+
+
+#logo {
+    width: 60px;
+    height: 60px;
+}
+
+.kopchekontakt {
+    background-color: red;
+    color: white;
+    border-radius: 0;
+    font-size: 1rem;
+    margin-top: 0;
+    margin-left: 22px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.p-2 {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+.p-2.scrolled {
+    color: black;
+}
+
+.nav-item:nth-child(-n+3) a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(255, 251, 35, 0.801);
+    border: 2px solid red;
+    transition: 0.2s;
+    padding-top: 10px;
+}
+
+.nav-item:nth-child(-n+3).active {
+    border-top: 1px solid red;
+    color: red;
+    margin-top: -1px;
+}
+
+.nav-item a.b-2 {
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+}
+
+.nav-item a.b-2:hover {
+    text-decoration: none;
+    border:none;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.fontnav {
+    font-family: 'Julius Sans One',
+        sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+navbar-transparent.p-2.scrolled {
+    color: black;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+
+/* MEDIA QUERIES / РЕСПОНЗИВНОСТ */
+
+@media only screen and (max-width: 425px)
+{ 
+    /* NAVBAR */
+
+.logotext.scrolled {
+    color: white;
+}
+
+.p-2.scrolled {
+    color: white;
+}
+
+/* navbar > .show > .scrolled > div > .logotitle > a > .logolink > h2 > .logotext {
+    color: white;
+} */
+
+
+.navbar-toggler.scrolled {
+    background: white;
+}
+
+.btnbars {
+    color: rgb(255, 0, 0);
+    width: 25px;
+    font-size: 35px;
+}
+
+.btnbars.scrolled {
+    color: red;
+}
+
+.navbar-toggler, .navbar-toggler:hover,
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    border: none;
+    outline: none;
+}
+
+
+ .navbar-expand-sm .kopchekontakt{
+     margin-left: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+ }
+
+ .navbar-expand-sm #petarizedNavbar {
+     height: 100vh;
+ }
+
+ .navbar-expand-sm > .logolink > .logotext {
+     color: white;
+ }
+
+ .collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+}
+
+.iksot {
+    color: rgb(255, 0, 0);
+    width: 25px;
+    font-size: 35px;
+}
+
+.show {
+    color: white!important;
+}
+
+}
+
+
+@media only screen and (max-width: 768px)
+{ 
+    
+/* NAVBAR */
+
+.logotitle {
+    margin-left: -30px;
+}
+
+.logolink {
+    width: 70%;
+}
+
+.logotext {
+    font-size: 20px;
+    margin-top: -37px;
+}
+
+#logo {
+    width: 20%;
+    height: 20%;
+    margin-left: 20%;
+}
+}
+

@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+@font-face{
+    font-family: myfont1;
+    src:url(../fonts/SofiaProRegular.ttf);
+}
+
+/* * {
+    border: 1px solid red;
+} */
+
+/* UNIVERZALNI CSS PRAVILA */
+
+.container {
+    max-width: 1440px;
+}
+
+.pomestilevo {
+    padding-left: 180px;
+}
+
+.pomestidole {
+    padding-top: 10%;
+}
+
+.pomestidole1 {
+    padding-top: 13%;
+}
+
+.pomestidole2 {
+    padding-top: 8%;
+}
+
+.pomestidole3 {
+    padding-top: 30%;
+}
+
+.pomestidole4 {
+    padding-top: 5%;
+}
+
+.pomestidole5{
+    padding-top: 17%;
+}
+
+.pomestidole6 {
+    padding-top: 5%;
+}
+
+.vovlechi {
+    margin-left: -7%;
+}
+
+/*  PRV CONTAINER */
+
+.prvcont {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+      rgba(39, 35, 35, 0.5), 
+      rgba(39, 35, 35, 0.5) 
+    ), url(../media/TeamPrva.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+
+.mrdaj {
+  display: inline-block;
+  overflow: hidden;
+  padding: 8px;
+}
+
+.firstlist {
+    margin-bottom: 0px;
+  display: inline-block;  
+  white-space: nowrap; 
+  animation: slide-left 8s linear infinite;
+  padding: 8px;
+}
+
+span.elementite {
+    margin-right: 20px;
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.arrowWrapper {
+    padding-top: 70px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+}
+
+.arrow:hover .dolnastrelka {
+    color: black;
+    opacity: 1;
+    transition: 2s;
+}
+
+.dolnastrelka {
+    color: red;
+    font-size: 25px;
+    margin-top: 12px;
+}
+
+.redLine {
+    min-height: 240px;
+    background-color: red;
+    width: 1px;
+    margin: 0 auto;
+    z-index: 2;
+    margin-top: -20px;
+}
+
+.pinWrapper {
+    width: 15px;
+    margin: 0 auto;
+}
+
+.people {
+    height: 500px;
+}
+
+#businessPeople {
+    height: 331px;
+    width: 450px;
+}
+
+@keyframes slide-left {  
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ACCORDION */
+
+.card {
+    cursor: pointer;
+    border-bottom: 1px solid rgba(184, 182, 182, 0.349);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.card-header {
+    padding: 25px;
+    background-color: white;
+    border: none;
+}
+
+.collapsed {
+    display: block;
+}
+
+.plus {
+    margin-top: -1%;
+}
+
+.accordnaslov {
+    color: rgb(255, 44, 64);
+    font-weight: normal;
+}
+
+/* FIFTH SECTION */
+
+.blackcity {
+    background-image: url(../media/blackcity.jpg);
+    height: 600px;
+}
+
+.fifthsecbtn {
+    font-size: 15px;
+    border-radius: 0;
+    padding: 20px 60px;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 1440px)
+{ 
+    
+/* empty */
+
+}
+
+@media only screen and (max-width: 1024px)
+{ 
+
+    #businessPeople {
+    height: 240px;
+    width: 300px;
+}
+
+.managementDiv {
+    width: 95%;
+    margin-left: 1.5%;
+}
+  
+
+}
+
+@media only screen and (max-width: 768px)
+{ 
+    .managementDiv {
+    width: 85%;
+    margin-left: 6.5%;
+}
+
+#businessPeople {
+    height: 195px;
+    width: 190px;
+}
+
+.centerthisbitchinmd {
+    text-align: center!important;
+}
+
+.people {
+    height: 330px;
+}
+
+}
+
+
+@media only screen and (max-width: 425px)
+{ 
+
+    .firsttext {
+        margin-top: 55%;
+    }
+
+    .namalivosm {
+        font-size: 27px;
+    }
+
+    .people {
+    height: 820px;
+}
+
+.card-body {
+    color: black;
+}
+  
+}

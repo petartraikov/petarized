@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+@font-face{
+    font-family: myfont1;
+    src:url(../fonts/SofiaProRegular.ttf);
+}
+
+ /* * {
+    border: 1px solid red;
+}  */
+
+/* UNIVERZALNI CSS PRAVILA */
+
+.container {
+    max-width: 1440px;
+}
+
+.pomestilevo {
+    padding-left: 180px;
+}
+
+.pomestidole {
+    padding-top: 10%;
+}
+
+.pomestidole1 {
+    padding-top: 13%;
+}
+
+.pomestidole2 {
+    padding-top: 8%;
+}
+
+.pomestidole3 {
+    padding-top: 30%;
+}
+
+.pomestidole4 {
+    padding-top: 5%;
+}
+
+.pomestidole5{
+    padding-top: 17%;
+}
+
+.vovlechi {
+    margin-left: -7%;
+}
+
+/* SECTION 1 */
+
+
+#imgs {
+    height: 700px;
+    width: 1380px;
+}
+
+.simg{
+    height: 700px;
+    width: 1380px;
+    margin-left: -315px;
+    margin-top: 383px;
+}
+
+.connexiontitle {
+    color: white;
+    font-size: 80px;
+    text-shadow: 2px 2px #9b8a8a;
+    margin-top: -30%;
+    margin-left: 23%;
+}
+
+#belospanche{
+    background: white;
+    border: 1px solid rgb(243, 240, 240);
+    box-shadow: 2px 2px 5px 2px #888888;
+    height: 100px;
+    width: 250px;
+    padding-top: 1%;
+    margin-top: -11%;
+    margin-left: -71%;
+}
+.wrapper {
+    cursor: pointer;
+    width: 780px;
+    height: 1444px;
+    margin-left: -15%;
+    margin-top: 10%;
+    transform: rotate(-90deg);
+    transform-origin: right top;
+    transform:rotate(-90deg) translateY(-590px);
+    overflow: hidden;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+
+/*HIDE SCROLLBAR*/
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+.tile {
+    transform: rotate(90deg); 
+}
+
+.tile:nth-child(n+2){
+margin-top: 100%;
+
+}
+
+#linkToFirst, #linkToSecond, #linkToThird {
+    margin-top: -37%;
+}
+
+#firstsection {
+    height: 85vh;
+}
+
+/* SODRZHINA NA STRANICITE */
+
+.biznis1slika {
+    background-image: url('../media/Work1-CelaStrana.jpg');
+    background-size: cover;
+    height: 1000px;
+}
+
+.biznis2slika {
+    background-image: url('../media/Work2\ CelaStrana.jpg');
+    background-size: cover;
+    height: 1000px;
+}
+
+.biznis3slika {
+    background-image: url('../media/Work3\ CelaStrana.jpg');
+    background-size: cover;
+    height: 1000px;
+}
+
+.addBorderToDiv {
+    border-left: 1px solid rgb(235, 235, 235);
+    border-right: 1px solid rgb(235, 235, 235);
+    height: 700px;
+    margin: 0px auto;
+}
+
+.contentWrapper {
+    padding-top: 150px;
+}
+
+@media only screen and (max-width: 1440px)
+{ 
+    
+/* empty */
+
+}
+
+@media only screen and (max-width: 1024px)
+{ 
+
+   #linkToFirst, #linkToSecond, #linkToThird {
+margin-top: -58%; 
+  } 
+
+}
+
+@media only screen and (max-width: 768px)
+{ 
+  #linkToFirst, #linkToSecond, #linkToThird {
+margin-top: -158%; 
+  } 
+
+#imgs {
+    height: 700px;
+    width: 1380px;
+}
+
+.simg {
+    height: 700px;
+    width: 1380px;
+    margin-left: 0px;
+    margin-top: 310px;
+}
+
+.connexiontitle {
+    color: white;
+    font-size: 52px;
+    text-shadow: 2px 2px #9b8a8a;
+    margin-top: -39%;
+    margin-left: 11%;
+}
+
+#fluidenkont {
+    height: 160vh;
+}
+
+#firstsection {
+    height: 160vh;
+}
+
+#belospanche{
+    background: white;
+    border: 1px solid rgb(243, 240, 240);
+    box-shadow: 2px 2px 5px 2px #888888;
+    height: 100px;
+    width: 250px;
+    padding-top: 1%;
+    margin-top: -13%;
+    margin-left: -43%;
+}
+.wrapper {
+    width: 693px;
+    height: 1444px;
+    margin-left: 2%;
+    margin-top: -22%;
+    transform: none;
+    overflow: hidden;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+
+.tile {
+    transform: none;
+}
+
+.tile:nth-child(n+2){
+margin-top: 10%;
+}
+
+
+}
+
+
+@media only screen and (max-width: 425px)
+{ 
+.wrapper {
+    width: 97%;
+    height: 1444px;
+    margin-left: 2%;
+    margin-top: -47%;
+    transform: none;
+    overflow: hidden;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+
+.connexiontitle {
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px #9b8a8a;
+    margin-top: -33%;
+    margin-left: 6%;
+}
+
+#belospanche {
+    background: white;
+    border: 1px solid rgb(243, 240, 240);
+    box-shadow: 2px 2px 5px 2px #888888;
+    height: 100px;
+    width: 250px;
+    padding-top: 1%;
+    margin-top: -13%;
+    margin-left: -21%;
+}
+
+#linkToFirst, #linkToSecond, #linkToThird {
+    margin-top: -306%;
+}
+
+.makeitblack {
+    color: black;
+}
+
+  
+}
